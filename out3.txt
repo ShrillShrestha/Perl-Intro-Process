@@ -1,0 +1,4 @@
+Child[3]: Line[1]: I like the leaves
+Child[3]: Line[2]: that fall from the trees.
+Child[3]: Line[3]: The reds, greens, and browns
+Child[3]: Line[4]: we rake into a mound.

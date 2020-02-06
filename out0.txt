@@ -1,0 +1,4 @@
+Child[0]: Line[1]: Travel is fatal to
+Child[0]: Line[2]: prejudice, bigotry, and narrow-mindedness,
+Child[0]: Line[3]: and many of our people
+Child[0]: Line[4]: need it sorely on these accounts.

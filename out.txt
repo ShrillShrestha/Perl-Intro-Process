@@ -1,0 +1,17 @@
+Child[0]: Line[1]: Travel is fatal to
+Child[1]: Line[1]: Do what you love
+Child[2]: Line[1]: Do not dwell in the past,
+Child[3]: Line[1]: I like the leaves
+Child[4]: Line[1]: Happiness is when what you think,
+Child[0]: Line[2]: prejudice, bigotry, and narrow-mindedness,
+Child[1]: Line[2]: love what you do
+Child[2]: Line[2]: do not dream of the future,
+Child[3]: Line[2]: that fall from the trees.
+Child[4]: Line[2]: what you say,
+Child[0]: Line[3]: and many of our people
+Child[1]: Line[3]: and deliver more than you promise
+Child[2]: Line[3]: concentrate the mind on the present moment.
+Child[3]: Line[3]: The reds, greens, and browns
+Child[4]: Line[3]: and what you do are in harmony.
+Child[0]: Line[4]: need it sorely on these accounts.
+Child[3]: Line[4]: we rake into a mound.
