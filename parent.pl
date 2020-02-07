@@ -38,6 +38,8 @@ for(my $j = 0; $j < $childNums[1]; $j++){
     my $child = wait();
 }
 
+#-----------------------------------------
+
 my $ah;
 my $oFile = "";
 my $lcnt = 0;
@@ -45,16 +47,18 @@ my $tLines = 0;
 
 for(my $k = 0; $k < $childNums[1]; $k++){
     $oFile = "out".$k.".txt";
-    open ($ah, '<:encoding(UTF-8)', $oFile)
-    or die "Couldn't open the file '$oFile' $!.\nThis file wont be read!";
-
-    while(my $line = <$ah>){
-        chomp $line;
-        $outarray[$k][$lcnt] = $line;
-        $lcnt++;
+    if(open ($ah, '<:encoding(UTF-8)', $oFile)){
+        while(my $line = <$ah>){
+            chomp $line;
+            $outarray[$k][$lcnt] = $line;
+            $lcnt++;
+        }
+        $tLines += $lcnt; 
+        $lcnt = 0;
+    }else{
+        $outarray[$k][0] = "Couldn't access the file '$oFile' $!.!";
+        $tLines += 1;
     }
-    $tLines += $lcnt; 
-    $lcnt = 0;
 }
 
 my $finalOut = "";
@@ -71,7 +75,9 @@ while ($cnt < $tLines){
     $col++;
 }
 
-open($fh, '>', $outFileName)
-or die "Couldn't open the file '$outFileName' $!";
-print $fh $finalOut;
-close($fh);
+if(open($fh, '>>', $outFileName)){
+    print $fh $finalOut;
+    close($fh);
+}else{
+    die "Couldn't open the file '$outFileName' $!";
+}
